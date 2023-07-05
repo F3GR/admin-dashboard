@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+  position: relative;
+  display: inline-block;
+}
+
+a:hover::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  background-color: grey;
+  width: 130%;
+  height: 0;
+  padding-bottom: 130%;
+  border-radius: 50%;
+  border: 1px solid black;
+  z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <a href=""><img src="./assets/magnify.svg" alt="Search icon"></a>
+    <input type="text" />
+</body>
+</html>
