@@ -1,0 +1,268 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/Roboto-Light.ttf);
+}
+
+:root {
+   --grey: rgb(163, 163, 163);
+   --lightblue: rgb(224, 242, 254);
+   --lightpink: rgb(253, 164, 175);
+   --lightgrey: rgb(226, 232, 240);
+   --orange: rgb(240, 180, 41);
+   --yellow: rgb(250, 204, 21);
+   --white: rgb(255, 255, 255);
+   --blue: rgb(25, 146, 212);
+}
+
+* {
+    font-family: "Roboto";
+}
+
+body {
+    display: grid;
+    grid-template-columns: 35rem 1fr;
+}
+
+p {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color:rgb(109, 109, 109);
+    font-weight: bold;
+}
+
+nav {
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--blue);
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+}
+
+nav a {
+    display: grid;
+    grid-template-columns: 50px 1fr;   
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav a span {
+    padding-left: 1rem;
+}
+
+nav a img {
+    justify-self: center;
+    align-self: center;
+}
+
+nav ul li {
+    margin-bottom: 1.5rem;
+}
+
+nav ul li:nth-child(7) {
+    margin-top: 5rem;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+ul a {
+    font-size: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 20rem 1fr;
+}
+
+.header {
+    background-color: var(--white);
+    display: grid;
+    grid-template-rows: 8rem 12rem;
+    padding: 1rem 3rem;
+    align-items: end;
+}
+
+.header * {
+    align-self: center;
+}
+
+.header img {
+    justify-self: center;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 40rem;
+}
+
+.search-bar > * {
+    display: grid;
+}
+
+.search {
+    grid-template-columns: 5rem 1fr;
+}
+
+.search input {
+    border-radius: 10rem;
+    border: 1px solid gray;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 7rem 7rem 7rem 15rem;
+}
+
+.search > *, .account > * {
+    margin: 0 1rem;
+}
+
+.account span {
+    font-weight: bold;
+    display: grid;
+    padding-left: 1rem;
+}
+
+.use-bar {
+    display: grid;
+    grid-template-columns: 10rem 1fr 1fr;
+}
+
+.use-bar * {
+    font-weight: bold;
+}
+
+.use-bar img {
+    transform: scale(1.5);
+}
+
+.greeting .username {
+    font-size: 2rem;
+}
+
+.project-control {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-control > * {
+    display: grid;
+}
+
+.project-control button {
+    width: 10rem;
+    height: 4rem;
+    background-color: var(--blue);
+    border-radius: 10rem;
+    color: white;
+    border: none;
+    justify-self: center;
+}
+
+.content {
+    background-color: var(--lightgrey);
+    display: grid;
+    grid-template-columns: 3.5fr 1.5fr;
+    gap: 2rem;
+    padding-bottom: 5rem;
+}
+
+.projects {
+    padding: 0rem 3rem;
+}
+
+.projects {
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+    padding-right: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.projects h2 {
+    align-self: end;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-auto-rows: 25rem;
+    gap: 2rem;
+}
+
+.project-block {
+    background-color: var(--white);
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 0.5rem 1fr;
+    border-radius: 2rem;
+}
+
+.decor {
+    background-color: var(--orange);
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.project {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: minmax(15rem, 1fr) 5rem;
+}
+
+.project-block .options {
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    place-self: end;
+    justify-items: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.announcements h2 {
+    align-self: end;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+    margin-right: 2rem;
+}
+
+.announcement-box {
+    display: grid;
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.trending h2 {
+    align-self: end;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+    margin-right: 2rem;
+}
+
+.trending-box {
+    display: grid;
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 2rem;
+}
